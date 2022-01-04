@@ -1,7 +1,7 @@
 # TIMM to Cifar100
 General purpose script to (transfer) learn Cifar100 dataset for TIMM models
 
-As it directly adopts the original training script of TIMM, the resulting performance should be competitive than casual made ones.
+As it directly adopts the original training script of TIMM, the resulting performance should be extremely competitive compared to the casual made ones.
 
 ## Usage
 - Intall dependencies
