@@ -6,7 +6,7 @@ As it directly adopts the original training script of TIMM, the resulting perfor
 ## Usage
 - Intall dependencies
 - Run script, below is an example of training efficientnet-b7 on cifar-100
-  - Config ```model```. ```b```(batch size) as you wish :) 
+  - Config ```model```, ```b```(batch size) as you wish :) 
 ```
 python3 train.py \
 /cifar-100-dataset \
