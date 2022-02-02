@@ -11,10 +11,10 @@ As it directly adopts the original training script of TIMM, the resulting perfor
 python3 train.py \
 /cifar-100-dataset \
 --num-classes=100 \
--b=32 \
+-b=128 \
 --img-size=224 \
 --epochs=50 \
---color-jitter=0 \
+--color-jitter=0.4 \
 --sched='cosine' \
 --model-ema --model-ema-decay=0.995 --reprob=0.5 --smoothing=0.1 \
 --pretrained \
