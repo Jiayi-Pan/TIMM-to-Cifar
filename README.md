@@ -11,16 +11,21 @@ As it directly adopts the original training script of TIMM, the resulting perfor
 python3 train.py \
 /cifar-100-dataset \
 --num-classes=100 \
--b=128 \
+-b=16 \
 --img-size=224 \
 --epochs=50 \
 --color-jitter=0.4 \
 --sched='cosine' \
---model-ema --model-ema-decay=0.995 --reprob=0.5 --smoothing=0.1 \
+--mean 0.5071 0.4867 0.4408 \
+--std 0.2675 0.2565 0.2761 \
+--model-ema --model-ema-decay=0.99 \
+--reprob=0.05 --smoothing=0.1 \
 --pretrained \
---lr=2e-4 \
+--lr=2e-3 \
 --model=tf_efficientnet_b7_ns \
 --opt=adam \
---weight-decay=1e-4 \
---amp
+--amp \
+--log-wandb \
+--experiment='CF100-EFB7'
+
 ```
